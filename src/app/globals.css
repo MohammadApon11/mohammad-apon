@@ -2,3 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* color class */
+.bg-primary {
+  @apply bg-[#c9f31d];
+}
+.bg-lighter {
+  @apply bg-[#1f1f1f];
+}
+.text-primary {
+  @apply text-[#c9f31d]
+}
+.text-secondary {
+  @apply text-[#1f1f1f]
+}

@@ -1,7 +1,8 @@
-import { Noto_Sans } from "next/font/google";
+import { Noto_Sans,DM_Sans } from "next/font/google";
 import "./globals.css";
+import NavBar from "@/components/shared/NavBar";
 
-const inter = Noto_Sans({ subsets: ["latin"] });
+const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Mohammad Apon",
@@ -11,7 +12,10 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-[#0f172a]`}>{children}</body>
+      <body className={`${dmSans.className} bg-[#131313]`}>
+        <NavBar />
+        {children}
+      </body>
     </html>
   );
 };
